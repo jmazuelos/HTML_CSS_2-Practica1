@@ -4,27 +4,52 @@
  */
 
 /**
- * Import variables
+ * Import settings (scss variables for theme colors, typography, devices breakpoints, model-box and positioning properties)
  */
 
-@import "variables";
+@import "1-settings/properties";
+@import "1-settings/theme";
+@import "1-settings/typography";
 
 /**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
+ * Import tools (scss mixins and functions)
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@import "layouts/home";
+@import "2-tools/external-dependencies";
+@import "2-tools/functions";
+@import "2-tools/mixins";
 
 /**
- * Do NOT include anything else in this file!
+ * Import generic (generic css like reset, normalize, box sizing)
  */
+
+@import "3-generic/box-sizing";
+@import "3-generic/reset";
+@import "3-generic/normalize";
+
+/**
+ * Import elements (style specific html tags like body, a, p, ul li, ol li)
+ */
+
+@import "4-elements/elements";
+
+/**
+ * Import objects (layout object like media object, grid, container, stack, inline)
+ */
+
+@import "5-objects/objects";
+
+/**
+ * Import components (layout components like teaser, navigation, header, footer)
+ */
+
+@import "6-components/footer";
+@import "6-components/logo";
+@import "6-components/title";
+
+/**
+ * Import utilities (utility classes like states, text-center, text-right, text-left)
+ */
+
+@import "7-utilities/states";
+@import "7-utilities/utilities";

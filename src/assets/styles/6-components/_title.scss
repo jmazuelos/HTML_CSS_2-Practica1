@@ -1,0 +1,10 @@
+.uoc-title {
+  font-family: $font-family-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $uoc-corporate;
+
+  @media (min-width: $mqMinWidth) {
+    font-size: 36px;
+  }
+}

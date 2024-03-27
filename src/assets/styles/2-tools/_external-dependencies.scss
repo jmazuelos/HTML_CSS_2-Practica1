@@ -1,0 +1,9 @@
+/**
+ * Import npm dependencies
+ * @import "@some-company/some-node-module";
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// Import FontAwesome;
+@import "npm:@fortawesome/fontawesome-free/css/all.css";

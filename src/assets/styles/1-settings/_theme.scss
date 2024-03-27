@@ -1,0 +1,24 @@
+/*********************************************************\
+SCSS VARIABLES FOR:
+- THEME COLORS
+\*********************************************************/
+
+/*
+* SASS MODULES
+*/
+@use "sass:color";
+
+/*
+* BRAND COLORS
+*/
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+/*
+* LINK COLORS
+*/
+
+/*
+* FOCUS COLORS
+*/

@@ -1,0 +1,31 @@
+/*********************************************************\
+SCSS VARIABLES FOR:
+- DEVICES BREAKPOINTS
+- MODEL-BOX PROPERTIES
+- POSITIONING PROPERTIES
+\*********************************************************/
+
+/**
+* DEVICES BREAKPOINTS 
+* Info: set by max-width value.
+* Used in: 
+*/
+$breakpoints: (
+  laptop: 1200px,
+  // 992px - 1200px
+  tablet: 991px,
+  // 768px -  991px
+  mobile: 767px,
+  //   0px -  767px
+);
+
+/**
+* POSITIONING VARIABLES
+* Used in:
+*/
+
+/**
+* MODEL-BOX VARIABLES
+* Used in:
+*/
+$mqMinWidth: 420px;
