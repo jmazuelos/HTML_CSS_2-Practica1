@@ -1,12 +1,11 @@
-/*********************************************************\
-SCSS VARIABLES FOR:
-- DEVICES BREAKPOINTS
-- MODEL-BOX PROPERTIES
-- POSITIONING PROPERTIES
-\*********************************************************/
+/**
+* Scss variables for: devices breakpoints, model-box properties and positioning properties
+*/
+
+/*======= #DEVICES BREAKPOINTS =======*/
 
 /**
-* DEVICES BREAKPOINTS 
+* Devices breakpoints
 * Info: set by max-width value.
 * Used in: 
 */
@@ -19,13 +18,12 @@ $breakpoints: (
   //   0px -  767px
 );
 
-/**
-* POSITIONING VARIABLES
-* Used in:
-*/
+/*======= #POSITIONING PROPERTIES =======*/
 
-/**
-* MODEL-BOX VARIABLES
-* Used in:
-*/
-$mqMinWidth: 420px;
+/*======= #BOX MODEL PROPERTIES =======*/
+
+/** #HEIGHT **/
+$headerNavHeight: 80px;
+
+/** #Z-INDEX **/
+$z-fixed: 1000;

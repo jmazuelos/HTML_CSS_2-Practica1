@@ -1,24 +1,34 @@
-/*********************************************************\
-SCSS VARIABLES FOR:
-- THEME COLORS
-\*********************************************************/
-
-/*
-* SASS MODULES
+/**
+* Scss variables for: theme colors
 */
+
+/*======= #SASS MODULES =======*/
 @use "sass:color";
 
-/*
-* BRAND COLORS
-*/
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+/*======= #BRAND COLORS =======*/
+$brand-primary-color: #1e254a;
+$brand-secondary-color: #a8c4d4;
+$brand-tertiary-color: #5d8bac;
+$scottish-color: #0065bf;
 
-/*
-* LINK COLORS
-*/
+$brand-primary-color-bg: color.scale($brand-primary-color, $lightness: 70%);
 
-/*
-* FOCUS COLORS
-*/
+/*======= #BODY COLORS =======*/
+$first-color: hsl(235, 49%, 60%);
+$first-color-alt: hsl(235, 44%, 56%);
+$first-color-light: hsl(235, 62%, 70%);
+
+$body-color: hsl(204, 100%, 97%);
+$menu-color: hsl(204, 100%, 90%);
+$container-color: hsl(204, 100%, 95%);
+
+$shadow-img: 0 0 48px hsla(178, 54%, 54%, 0.4);
+$gradient-card: linear-gradient(
+  180deg,
+  hsla(204, 95%, 95%),
+  hsla(204, 50%, 80%)
+);
+
+/*======= #LINK COLORS =======*/
+
+/*======= #FOCUS COLORS =======*/

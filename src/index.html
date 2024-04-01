@@ -2,41 +2,332 @@
 
 <html>
     <head>
+        <!--======= #META LABELS =======-->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Descubre Edimburgo con EdimburGo!. Ofrecemos diversos servicios para que tu viaje a Edimburgo sea inolvidable."
+        />
+
+        <!--======= #CSS LINKS =======-->
         <link
             rel="stylesheet"
             type="text/css"
             href="./assets/styles/main.scss"
         />
-        <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+
+        <!--======= #FAVICON =======-->
+        <link rel="icon" href="/src/assets/images/global/favicon/favicon.ico" />
+        <title>EdimburGo!</title>
     </head>
+
     <body>
-        <div class="uoc-container">
-            <picture>
-                <source
-                    srcset="./assets/images/logo.png?as=webp&width=350"
-                    type="image/webp"
-                />
+        <!--======= #HEADER =======-->
+        <header>
+            <nav class="header-nav o-container">
+                <a href="#home-section">
+                    <picture id="header-nav-logo" class="header-nav__logo">
+                        <source
+                            media="(max-width: 900px)"
+                            srcset="
+                                /src/assets/images/global/logo/logo-text.svg
+                            "
+                        />
+                        <img
+                            id="header-nav-img"
+                            src="/src/assets/images/global/logo/extended-logo.svg"
+                            alt="Logo"
+                        />
+                    </picture>
+                </a>
+
+                <div id="header-nav-menu" class="header-nav__menu">
+                    <ul class="header-nav__list u-nowrap">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#history-section"
+                                >Historia</a
+                            >
+                        </li>
+
+                        <li id="patrimony-item" class="header-nav__item">
+                            <div class="header-nav__link-content">
+                                <a
+                                    class="header-nav__link"
+                                    href="#patrimony-section"
+                                    >Patrimonio</a
+                                >
+                                <i
+                                    id="caret-icon"
+                                    class="fa-solid fa-caret-right"
+                                ></i>
+                            </div>
+                            <ul
+                                id="header-nav-sublist"
+                                class="header-nav__sublist"
+                            >
+                                <li class="header-nav__subitem">
+                                    <a
+                                        class="header-nav__sublink"
+                                        href="#urban-patrimony-section"
+                                        >Patrimonio urbano</a
+                                    >
+                                </li>
+                                <li class="header-nav__subitem">
+                                    <a
+                                        class="header-nav__sublink"
+                                        href="#natural-patrimony-section"
+                                        >Patrimonio natural</a
+                                    >
+                                </li>
+                                <li class="header-nav__subitem">
+                                    <a
+                                        class="header-nav__sublink"
+                                        href="#intangible-patrimony-section"
+                                        >Patrimonio inmaterial</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a
+                                class="header-nav__link"
+                                href="#gastronomy-section"
+                                >Gastronomía</a
+                            >
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#events-section"
+                                >Eventos</a
+                            >
+                        </li>
+
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#guide-section"
+                                >Guia turística</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div id="close-btn" class="header-nav__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div id="hamburger-btn" class="header-nav__hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <span class="header__shadow"></span>
+        </header>
+
+        <!--======= #MAIN =======-->
+        <main>
+            <section class="section" id="home-section">
                 <img
-                    src="./assets/images/logo.png?width=350"
-                    alt="Universitat Oberta de Catalunya"
-                    class="uoc-logo"
+                    class="section__background section__background--opacity-home"
+                    src="/src/assets/images/home/edimburgo-home-background.jpg"
+                    alt="Imagen de la sección home"
                 />
-            </picture>
-            <h1 class="uoc-title">
-                <i class="fas fa-university"></i>Hello, UOC!
-            </h1>
-            <p>
-                This is a starter template for the Advanced HTML and CSS Tools
-                courses from the Master's Program in Multimedia Applications and
-                the Master's Program in Web App and Website Development at the
-                Universitat Oberta de Catalunya.
-            </p>
-        </div>
-        <include src="./views/footer.html"></include>
-        <script type="module" src="./assets/scripts/main.js"></script>
-        <!-- do not remove this line! -->
+                <span class="section__shadow"></span>
+
+                <div class="section__container o-container o-grid">
+                    <div class="section__data">
+                        <h3 class="section__subtitle">
+                            Bienvenido a EdimburGo!
+                        </h3>
+                        <h1 class="section__title">Explore Edimburgo</h1>
+
+                        <p class="section__description">
+                            Sumérgete en la sorprendente historia y cultura de
+                            Edimburgo. Explora sus edificios históricos,
+                            monumentos y déjate cautivar por sus impresionantes
+                            paisajes. Descubre sus fiestas tradicionales y su
+                            diversidad gastronómica. Edimburgo es más que una
+                            ciudad, es una experiencia inolvidable que te está
+                            esperando.
+                        </p>
+                    </div>
+
+                    <div class="section__cards o-grid">
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/castle-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Castillo de Edimburgo
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/holyrood-palace-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Palacio de Holyroodhouse
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/arthurs-seat-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Asiento de Arturo
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/st-andrews-day-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Día de San Andrés
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="history-section">
+                <div class="section__container o-container o-grid">
+                    <div class="section__data">
+                        <img
+                            class="section__background section__background--opacity-history"
+                            src="/src/assets/images/history/history-background.jpg"
+                            alt="Imagen de la sección home"
+                        />
+                        <span class="section__shadow"></span>
+
+                        <h2 class="section__title">Historia</h2>
+                        <p class="section__description">
+                            Edimburgo, la capital de Escocia, es una ciudad que
+                            combina una rica historia con una vibrante cultura
+                            contemporánea. En esta sección, se puede explorar la
+                            fascinante historia de Edimburgo, desde sus orígenes
+                            hasta el presente.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="patrimony-section">
+                <div class="section__container o-container o-grid">
+                    <div class="section__data">
+                        <img
+                            class="section__background section__background--opacity-patrimony"
+                            src="/src/assets/images/patrimony/patrimony-background.jpg"
+                            alt="Imagen de la sección home"
+                        />
+                        <span class="section__shadow"></span>
+
+                        <h2 class="section__title">Patrimonio</h2>
+                        <p class="section__description">
+                            El patrimonio de Edimburgo se refleja en su
+                            impresionante arquitectura, desde las estrechas
+                            callejuelas y las casas altas de la Ciudad Vieja,
+                            hasta los elegantes edificios georgianos de la
+                            Ciudad Nueva. Ambas áreas son sitios del Patrimonio
+                            Mundial de la UNESCO, reconocidos por su valor
+                            cultural e histórico. Además, Edimburgo cuenta con
+                            un gran patrimonio cultural inmaterial, que atraen a
+                            artistas y visitantes de todo el mundo.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="gastronomy-section">
+                <div class="section__container o-container o-grid">
+                    <div class="section__data">
+                        <img
+                            class="section__background section__background--opacity-patrimony"
+                            src="/src/assets/images/gastronomy/gastronomy-background.jpg"
+                            alt="Imagen de la sección home"
+                        />
+                        <span class="section__shadow"></span>
+
+                        <h2 class="section__title">Gastronomía</h2>
+                        <p class="section__description">
+                            Edimburgo es conocida por sus restaurantes de alta
+                            calidad que ofrecen desde platos tradicionales
+                            escoceses hasta cocina internacional. Los visitantes
+                            pueden disfrutar del famoso haggis, el salmón
+                            escocés y los mariscos frescos. También es famosa
+                            por sus pubs y bares donde se puede degustar una
+                            amplia variedad de whiskies escoceses. Además, la
+                            ciudad alberga varios festivales gastronómicos a lo
+                            largo del año, destacando la calidad y la innovación
+                            de su escena culinaria.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="events-section">
+                <div class="section__container o-container o-grid">
+                    <div class="section__data">
+                        <img
+                            class="section__background section__background--opacity-home"
+                            src="/src/assets/images/events/events-background.jpg"
+                            alt="Imagen de la sección home"
+                        />
+                        <span class="section__shadow"></span>
+
+                        <h2 class="section__title">Eventos</h2>
+                        <p class="section__description">
+                            A lo largo del año, Edimburgo alberga una serie de
+                            festivales y eventos que atraen a visitantes de todo
+                            el mundo, destacando el Festival Internacional de
+                            Edimburgo, el Festival Fringe de Edimburgo, el
+                            Festival Internacional de Cine de Edimburgo, el
+                            Festival de la Ciencia de Edimburgo y Hogmanay, la
+                            celebración de Año Nuevo de Edimburgo, entre muchos
+                            otros. Estos eventos contribuyen a la vibrante
+                            atmósfera cultural de la ciudad.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="guide-section">
+                <div class="section__container o-container o-grid">
+                    <div class="section__data">
+                        <h2 class="section__title">Guía turística</h2>
+                        <p class="section__description">
+                            Descubre Edimburgo, la capital de Escocia, con su
+                            fascinante historia y cultura milenaria. Explora el
+                            Castillo de Edimburgo, la Royal Mile, el Palacio de
+                            Holyroodhouse y disfruta de las vistas desde
+                            Arthur's Seat. Experimenta el Festival Fringe,
+                            visita el Museo Nacional y prueba el tradicional
+                            haggis. Edimburgo ofrece una experiencia inolvidable
+                            para todos los visitantes.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--======= #FOOTER =======-->
+        <footer class="footer">
+            <p>&copy; 2024 - jmazuelos</p>
+            <p>UOC</p>
+        </footer>
+
+        <script type="module" src="/src/assets/scripts/main.js"></script>
     </body>
 </html>

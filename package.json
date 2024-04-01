@@ -54,6 +54,7 @@
     "stylelint-scss": "^6.2.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.1"
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "jquery": "^3.7.1"
   }
 }

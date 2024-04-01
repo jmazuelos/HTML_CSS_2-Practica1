@@ -1,12 +1,38 @@
-/*********************************************************\
-SCSS VARIABLES FOR:
-- TYPOGRAPHY
-\*********************************************************/
-
 /**
-* GLOBAL FONTS
+* Scss variables for: typograghy
 */
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+
+/*======= #FONT IMPORTS =======*/
+
+//Import Montserrat google font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+* Montserrat: CSS class for a variable style:
+
+  .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+
+/*======= #FONT PROPERTIES =======*/
+
+/** #FONT FAMILY **/
+$primary-font: "Montserrat", sans-serif;
+
+/** #FONT SIZE (1rem = 16px) **/
+$biggest-font-size: 2rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$big-font-size: 1.1rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.95rem;
+$small-font-size: 0.8rem;
+
+/** #FONT WEIGHT **/
+$font-bold: bold;
+$font-semi-bold: 700;
+$font-small-bold: 500;

@@ -6,11 +6,8 @@
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
+import "./header/_header-nav.js";
+
 /**
  * Write any other JavaScript below
  */
-
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
