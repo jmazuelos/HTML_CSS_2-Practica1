@@ -9,18 +9,47 @@ const sharp = require("sharp");
 
 const directoryPath = path.join(__dirname, "src/assets/images");
 
-const convertImages = (filePath) => {
+const resizeConvertedImage = (filePath, width) => {
+  sharp(filePath)
+    .resize(width)
+    .toFile(filePath + ".webp", (err, info) => {
+      err
+        ? console.log(`Error: ${err}`)
+        : console.log(`File resized successfully: ${info}`);
+    });
+};
+
+const convertImage = (filePath) => {
   sharp(filePath)
     .webp()
     .toFile(filePath + ".webp", (err, info) => {
-      if (err) console.log(`Error: ${err}`);
-      else console.log(`File processed successfully: ${info}`);
+      err
+        ? console.log(`Error: ${err}`)
+        : console.log(`File processed successfully: ${info}`);
     });
+};
+
+const deleteWebpImages = (dir) => {
+  fs.readdir(dir, (error, files) => {
+    if (error) console.log(`Error: ${err}`);
+
+    for (let file of files) {
+      if (path.extname(file) === ".webp") {
+        fs.unlink(path.join(dir, file), (error) => {
+          error
+            ? console.log(`Error: ${err}`)
+            : console.log(`Deleted file: ${file}`);
+        });
+      }
+    }
+  });
 };
 
 const walkDirectory = (dir, done) => {
   fs.readdir(dir, (error, list) => {
     if (error) return done(error);
+
+    deleteWebpImages(dir); //Se eliminan previamente los archivos para evitar acumulacion
 
     let i = 0;
 
@@ -42,7 +71,7 @@ const walkDirectory = (dir, done) => {
             path.extname(file) === ".jpg.webp" ||
             path.extname(file) === ".png"
           ) {
-            convertImages(file);
+            convertImage(file);
           }
           next();
         }
@@ -52,9 +81,7 @@ const walkDirectory = (dir, done) => {
 };
 
 walkDirectory(directoryPath, (error) => {
-  if (error) {
-    console.log("Error: ", error);
-  } else {
-    console.log("Images processed successfully");
-  }
+  error
+    ? console.log("Error: ", error)
+    : console.log("Images processed successfully");
 });

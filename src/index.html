@@ -45,12 +45,23 @@
         <!--======= #MAIN =======-->
         <main>
             <section class="section" id="home-section">
-                <img
-                    class="section__background section__background--opacity-008"
-                    src="/src/assets/images/home/edimburgo-home-background.jpg.webp"
-                    alt="Imagen de la sección home"
-                    loading="lazy"
-                />
+                <picture>
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            /src/assets/images/home/edimburgo-home-background.jpg-620.webp
+                        "
+                    />
+                    <img
+                        class="section__background section__background--opacity-008"
+                        src="/src/assets/images/home/edimburgo-home-background.jpg.webp"
+                        alt="Imagen de la sección home"
+                        loading="lazy"
+                        width="1024"
+                        height="1024"
+                    />
+                </picture>
+
                 <!--<amp-img
                     class="section__background section__background--opacity-008"
                     src="/src/assets/images/home/edimburgo-home-background.jpg.webp"
@@ -84,9 +95,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/castle-home-card.jpg.webp"
+                                src="/src/assets/images/home/castle-home-card.jpg-260.webp"
                                 alt="Castillo de Edimburgo"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Castillo de Edimburgo
@@ -97,9 +110,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/holyrood-palace-home-card.jpg.webp"
+                                src="/src/assets/images/home/holyrood-palace-home-card.jpg-260.webp"
                                 alt="Palacio de Holyrood"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Palacio de Holyroodhouse
@@ -110,9 +125,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/arthurs-seat-home-card.jpg.webp"
+                                src="/src/assets/images/home/arthurs-seat-home-card.jpg-260.webp"
                                 alt="Asiento de Arturo"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Asiento de Arturo
@@ -123,9 +140,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/st-andrews-day-home-card.jpg.webp"
+                                src="/src/assets/images/home/st-andrews-day-home-card.jpg-260.webp"
                                 alt="Celebración de San Andrés"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Día de San Andrés
@@ -141,12 +160,23 @@
                     class="section__container o-container o-grid section__container--grid"
                 >
                     <div class="section__data section__data--left">
-                        <img
-                            class="section__background section__background--opacity-006"
-                            src="/src/assets/images/history/history-background.jpg.webp"
-                            alt="Imagen de la sección historia"
-                            loading="lazy"
-                        />
+                        <picture>
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    /src/assets/images/history/history-background.jpg-620.webp
+                                "
+                            />
+                            <img
+                                class="section__background section__background--opacity-006"
+                                src="/src/assets/images/history/history-background.jpg.webp"
+                                alt="Imagen de la sección historia"
+                                loading="lazy"
+                                width="1024"
+                                height="856"
+                            />
+                        </picture>
+
                         <span class="section__shadow"></span>
 
                         <h2 class="section__title section__title--left">
@@ -179,12 +209,23 @@
             <section class="section" id="patrimony-section">
                 <div class="section__container o-container o-grid">
                     <div class="section__data">
-                        <img
-                            class="section__background section__background--opacity-004"
-                            src="/src/assets/images/patrimony/patrimony-background.jpg.webp"
-                            alt="Imagen de la sección patrimonio"
-                            loading="lazy"
-                        />
+                        <picture>
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    /src/assets/images/patrimony/patrimony-background.jpg-620.webp
+                                "
+                            />
+                            <img
+                                class="section__background section__background--opacity-004"
+                                src="/src/assets/images/patrimony/patrimony-background.jpg.webp"
+                                alt="Imagen de la sección patrimonio"
+                                loading="lazy"
+                                width="1024"
+                                height="1024"
+                            />
+                        </picture>
+
                         <span class="section__shadow"></span>
 
                         <h2 class="section__title">Patrimonio</h2>
@@ -207,9 +248,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/castle-home-card.jpg.webp"
+                                src="/src/assets/images/home/castle-home-card.jpg-260.webp"
                                 alt="Patrimonio urbano representado por el castillo de Edimburgo"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Patrimonio urbano
@@ -220,9 +263,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/arthurs-seat-home-card.jpg.webp"
+                                src="/src/assets/images/home/arthurs-seat-home-card.jpg-260.webp"
                                 alt="Patrimonio natural representado por el asiento de Arturo"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Patrimonio natural
@@ -233,9 +278,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/st-andrews-day-home-card.jpg.webp"
+                                src="/src/assets/images/home/st-andrews-day-home-card.jpg-260.webp"
                                 alt="Patrimonio inmaterial representado por el día de San Andrés"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Patrimonio inmaterial
@@ -250,12 +297,23 @@
                     class="section__container o-container o-grid section__container--grid-dos"
                 >
                     <div class="section__data section__data--left">
-                        <img
-                            class="section__background section__background--opacity-004"
-                            src="/src/assets/images/gastronomy/gastronomy-background.jpg.webp"
-                            alt="Imagen de la sección gastronomía"
-                            loading="lazy"
-                        />
+                        <picture>
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    /src/assets/images/gastronomy/gastronomy-background.jpg-620.webp
+                                "
+                            />
+                            <img
+                                class="section__background section__background--opacity-004"
+                                src="/src/assets/images/gastronomy/gastronomy-background.jpg.webp"
+                                alt="Imagen de la sección gastronomía"
+                                loading="lazy"
+                                width="1024"
+                                height="1024"
+                            />
+                        </picture>
+
                         <span class="section__shadow"></span>
 
                         <h2 class="section__title section__title--left">
@@ -281,9 +339,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/gastronomy/restaurants-card.jpg.webp"
+                                src="/src/assets/images/gastronomy/restaurants-card.jpg-260.webp"
                                 alt="Restaurante"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">Restaurantes</h3>
                             <span class="section__card-shadow"></span>
@@ -292,9 +352,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/gastronomy/pubs-card.jpg.webp"
+                                src="/src/assets/images/gastronomy/pubs-card.jpg-260.webp"
                                 alt="Pub"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">Pubs</h3>
                             <span class="section__card-shadow"></span>
@@ -303,9 +365,11 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/gastronomy/food-card.jpg.webp"
+                                src="/src/assets/images/gastronomy/food-card.jpg-260.webp"
                                 alt="Productos escoceses"
                                 loading="lazy"
+                                width="600"
+                                height="400"
                             />
                             <h3 class="section__card-title">
                                 Productos tradicionales
@@ -319,12 +383,22 @@
             <section class="section" id="events-section">
                 <div class="section__container o-container o-grid">
                     <div class="section__data">
-                        <img
-                            class="section__background section__background--opacity-008"
-                            src="/src/assets/images/events/events-background.jpg.webp"
-                            alt="Imagen de la sección eventos"
-                            loading="lazy"
-                        />
+                        <picture>
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    /src/assets/images/events/events-background.jpg-620.webp
+                                "
+                            />
+                            <img
+                                class="section__background section__background--opacity-008"
+                                src="/src/assets/images/events/events-background.jpg.webp"
+                                alt="Imagen de la sección eventos"
+                                loading="lazy"
+                                width="1024"
+                                height="605"
+                            />
+                        </picture>
                         <span class="section__shadow"></span>
 
                         <h2 class="section__title">Eventos</h2>
