@@ -18,16 +18,19 @@
         />
 
         <!--======= #LITE TOUTUBE EMBED ========-->
+        <!-- Se aniade media="print" onload="this.media='all'" para realizar la carga diferida, mejorando la optimizacion -->
         <link
             rel="stylesheet"
             href="/node_modules/lite-youtube-embed/src/lite-yt-embed.css"
+            media="print"
+            onload="this.media='all'"
         />
         <script
             async
             src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"
         ></script>
 
-        <!--======= #AMP-IMG (No aplicado, pero rendimiento) =======-->
+        <!--======= #AMP-IMG (No aplicado, peor rendimiento) =======-->
         <!-- <script async src="https://cdn.ampproject.org/v0.js"></script> -->
 
         <!--======= #FAVICON =======-->
