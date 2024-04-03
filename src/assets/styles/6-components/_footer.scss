@@ -1,9 +1,9 @@
 /*======= #BLOCK =======*/
 .footer {
-  background-color: #1e254a;
-  color: white;
   padding-block: 2rem;
+  color: $color-footer-set;
   text-align: center;
+  background-color: $color-primary;
 }
 
 .footer__content {
@@ -11,9 +11,9 @@
 }
 
 .footer__logo {
-  color: white;
   font-size: $h1-font-size;
   font-weight: $font-bold;
+  color: $color-footer-set;
 }
 
 .footer__description {
@@ -39,29 +39,28 @@
 
 /*======= #ELEMENTS =======*/
 .footer__link {
-  color: white;
   font-size: $small-font-size;
+  color: $color-footer-set;
   //font-weight: $font-small-bold;
   transition: color 0.3s;
 
   &:hover {
-    color: $menu-color;
+    color: $color-hover-footer-link;
   }
 }
 
 .footer__social {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
   gap: 1.5rem;
+  align-items: center; // Centra verticalmente
+  justify-content: center; // Centra horizontalmente
 }
 
 .footer__social-link {
   font-size: $h1-font-size;
-  transition: color 0.3s, transform 0.4s;
+  transition: transform 0.4s;
 
   &:hover {
-    color: $menu-color;
     transform: translateY(-0.25rem);
   }
 }

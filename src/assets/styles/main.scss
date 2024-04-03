@@ -25,7 +25,6 @@
 
 @import "3-generic/box-sizing";
 @import "3-generic/reset";
-@import "3-generic/normalize";
 
 /**
  * Import elements (style specific html tags like body, a, p, ul li, ol li)
@@ -52,5 +51,4 @@
  * Import utilities (utility classes like states, text-center, text-right, text-left)
  */
 
-@import "7-utilities/states";
 @import "7-utilities/utilities";

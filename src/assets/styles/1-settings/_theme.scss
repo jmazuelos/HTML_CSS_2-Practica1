@@ -5,30 +5,53 @@
 /*======= #SASS MODULES =======*/
 @use "sass:color";
 
-/*======= #BRAND COLORS =======*/
-$brand-primary-color: #1e254a;
-$brand-secondary-color: #a8c4d4;
-$brand-tertiary-color: #5d8bac;
-$scottish-color: #0065bf;
+/*======= #MAIN COLORS =======*/
+$color-primary: hsl(230, 42%, 20%);
+$color-transparent: hsla(0, 0%, 0%, 0);
+$color-secondary: hsl(0, 0%, 100%);
+//$color-primary-bg: color.scale($color-primary, $lightness: 70%);
 
-$brand-primary-color-bg: color.scale($brand-primary-color, $lightness: 70%);
+/*======= #ELEMENTS COLORS =======*/
+$color-body: hsl(204, 100%, 97%);
+$color-header-menu: hsl(204, 100%, 90%);
+$color-header-container: hsl(204, 100%, 95%);
 
-/*======= #BODY COLORS =======*/
-$first-color: hsl(235, 49%, 60%);
-$first-color-alt: hsl(235, 44%, 56%);
-$first-color-light: hsl(235, 62%, 70%);
-
-$body-color: hsl(204, 100%, 97%);
-$menu-color: hsl(204, 100%, 90%);
-$container-color: hsl(204, 100%, 95%);
-
-$shadow-img: 0 0 48px hsla(178, 54%, 54%, 0.4);
-$gradient-card: linear-gradient(
-  180deg,
-  hsla(204, 95%, 95%),
-  hsla(204, 50%, 80%)
-);
+$color-header-sublist: hsl(0, 0%, 98%);
+$color-footer-set: hsl(0, 0%, 100%);
+$color-card-title: hsl(0, 0%, 100%);
 
 /*======= #LINK COLORS =======*/
 
 /*======= #FOCUS AND HOVER COLORS =======*/
+$color-hover-header-link: hsl(235, 49%, 60%);
+$color-hover-footer-link: hsl(205, 100%, 68%);
+
+/*======= #GRADIENTS =======*/
+$gradient-header-shadow: linear-gradient(
+  180deg,
+  $color-transparent 50%,
+  $color-primary 500%
+);
+
+$gradient-section-bottom-shadow: linear-gradient(
+  180deg,
+  $color-transparent 95%,
+  $color-body 100%
+);
+
+$gradient-section-top-shadow: linear-gradient(
+  0deg,
+  $color-transparent 94%,
+  $color-body 100%
+);
+
+$gradient-section-card-shadow: linear-gradient(
+  180deg,
+  $color-transparent 40%,
+  $color-primary 100%
+);
+
+/*======= #SHADOWS (BOX-SHADOWS) =======*/
+$shadow-header: 0px 0.1px 5px $color-primary;
+$shadow-header-sublist: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+$shadow-section-card: 0px 1px 5px $color-primary, 0px 1px 5px $color-primary;

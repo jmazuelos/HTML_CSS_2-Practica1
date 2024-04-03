@@ -9,29 +9,27 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -2;
   width: 100%;
   height: calc(250px + 33vw);
   object-fit: cover;
   object-position: center;
-  z-index: -2;
 }
 
 .section__shadow {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: calc(250px + 33vw);
-  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 95%, $body-color 100%),
-    linear-gradient(0deg, hsla(0, 0%, 0%, 0) 94%, $body-color 100%);
-
-  z-index: -1;
+  background: $gradient-section-bottom-shadow, $gradient-section-top-shadow;
 }
 
 .section__container {
   position: relative;
-  padding-top: calc(60px + 4vw);
   row-gap: 2rem;
+  padding-top: calc(60px + 4vw);
 }
 
 .section__data {
@@ -63,8 +61,7 @@
   overflow: hidden;
   cursor: pointer;
 
-  //box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 1px 5px $brand-primary-color, 0px 1px 5px $brand-primary-color;
+  box-shadow: $shadow-section-card;
 
   .section__card-img {
     transition: transform 0.4s;
@@ -81,20 +78,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 0) 40%,
-    $brand-primary-color 100%
-  );
+  background: $gradient-section-card-shadow;
 }
 
 .section__card-title {
   position: absolute;
-  left: 0.5rem;
   bottom: 0.5rem;
-
-  color: hsl(0, 0%, 100%);
+  left: 0.5rem;
   z-index: 1;
+
+  color: $color-card-title;
 }
 
 .section__video {
@@ -122,6 +115,12 @@
   }
 }
 
+.section__cards--grid-tres {
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(1, 200px);
+  }
+}
+
 .section__cards--grid-dos {
   justify-content: center;
 
@@ -132,8 +131,15 @@
 
 .section__container--grid {
   @media screen and (min-width: 600px) {
-    align-items: center;
     grid-template-columns: 2fr 3fr;
+    align-items: center;
+  }
+}
+
+.section__container--grid-dos {
+  @media screen and (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 

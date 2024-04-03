@@ -10,6 +10,8 @@ const patrimonyItemDescendants = document
   .getElementById("patrimony-item")
   .querySelectorAll("*");
 const caretIcon = document.getElementById("caret-icon");
+const menuLinks = document.querySelectorAll("#header-nav-menu a");
+const sublistLinks = document.querySelectorAll("#header-nav-sublist a");
 
 /*======= #EVENTOS =======*/
 window.addEventListener("scroll", stickyMenuWhenScroll);
@@ -58,6 +60,14 @@ if (window.innerWidth <= 767) {
       closeSublist();
     }
   });
+}
+
+for (let link of menuLinks) {
+  link.addEventListener("click", closeMenu);
+}
+
+for (let link of sublistLinks) {
+  link.addEventListener("click", closeSublist);
 }
 
 /*======= #METODOS Y FUNCIONES =======*/
