@@ -17,6 +17,16 @@
             href="./assets/styles/main.scss"
         />
 
+        <!--======= #LITE TOUTUBE EMBED ========-->
+        <link
+            rel="stylesheet"
+            href="/node_modules/lite-youtube-embed/src/lite-yt-embed.css"
+        />
+        <script
+            async
+            src="/node_modules/lite-youtube-embed/src/lite-yt-embed.js"
+        ></script>
+
         <!--======= #FAVICON =======-->
         <link rel="icon" href="/src/assets/images/global/favicon/favicon.ico" />
         <title>EdimburGo!</title>
@@ -31,8 +41,9 @@
             <section class="section" id="home-section">
                 <img
                     class="section__background section__background--opacity-008"
-                    src="/src/assets/images/home/edimburgo-home-background.jpg"
+                    src="/src/assets/images/home/edimburgo-home-background.jpg.webp"
                     alt="Imagen de la sección home"
+                    loading="lazy"
                 />
                 <span class="section__shadow"></span>
 
@@ -58,8 +69,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/castle-home-card.jpg"
+                                src="/src/assets/images/home/castle-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Castillo de Edimburgo
@@ -70,8 +82,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/holyrood-palace-home-card.jpg"
+                                src="/src/assets/images/home/holyrood-palace-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Palacio de Holyroodhouse
@@ -82,8 +95,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/arthurs-seat-home-card.jpg"
+                                src="/src/assets/images/home/arthurs-seat-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Asiento de Arturo
@@ -94,8 +108,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/st-andrews-day-home-card.jpg"
+                                src="/src/assets/images/home/st-andrews-day-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Día de San Andrés
@@ -113,8 +128,9 @@
                     <div class="section__data section__data--left">
                         <img
                             class="section__background section__background--opacity-006"
-                            src="/src/assets/images/history/history-background.jpg"
+                            src="/src/assets/images/history/history-background.jpg.webp"
                             alt="Imagen de la sección home"
+                            loading="lazy"
                         />
                         <span class="section__shadow"></span>
 
@@ -131,29 +147,16 @@
                     </div>
 
                     <div class="section__video">
-                        <!--<lite-youtube
+                        <lite-youtube
                             loading="lazy"
-                            videoid="2tryrRsmZfE"
-                            playlabel="Play: El corazón de la piedra, Osuna, Sevilla"
+                            videoid="-o3W34-IqZU"
+                            playlabel="Play: Historia de escocia"
+                            style="
+                                background-image: url(https://i.ytimg.com/vi_webp/-o3W34-IqZU/sddefault.webp);
+                                width: calc(250px + 20vw);
+                            "
                         ></lite-youtube>
-                        <figcaption class="aligned">
-                            Información turística sobre Osuna
-                        </figcaption>-->
-                        <figure>
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/-o3W34-IqZU?si=UfqCmpPSeVt4O06f"
-                                title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen
-                                style="border: none"
-                            ></iframe>
-                            <figcaption class="">
-                                Historia de Escocia
-                            </figcaption>
-                        </figure>
+                        <figcaption>Historia de Escocia</figcaption>
                     </div>
                 </div>
             </section>
@@ -163,8 +166,9 @@
                     <div class="section__data">
                         <img
                             class="section__background section__background--opacity-004"
-                            src="/src/assets/images/patrimony/patrimony-background.jpg"
+                            src="/src/assets/images/patrimony/patrimony-background.jpg.webp"
                             alt="Imagen de la sección home"
+                            loading="lazy"
                         />
                         <span class="section__shadow"></span>
 
@@ -188,8 +192,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/castle-home-card.jpg"
+                                src="/src/assets/images/home/castle-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Patrimonio urbano
@@ -200,8 +205,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/arthurs-seat-home-card.jpg"
+                                src="/src/assets/images/home/arthurs-seat-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Patrimonio natural
@@ -212,8 +218,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/home/st-andrews-day-home-card.jpg"
+                                src="/src/assets/images/home/st-andrews-day-home-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Patrimonio inmaterial
@@ -230,8 +237,9 @@
                     <div class="section__data section__data--left">
                         <img
                             class="section__background section__background--opacity-004"
-                            src="/src/assets/images/gastronomy/gastronomy-background.jpg"
+                            src="/src/assets/images/gastronomy/gastronomy-background.jpg.webp"
                             alt="Imagen de la sección home"
+                            loading="lazy"
                         />
                         <span class="section__shadow"></span>
 
@@ -258,8 +266,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/gastronomy/restaurants-card.jpg"
+                                src="/src/assets/images/gastronomy/restaurants-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">Restaurantes</h3>
                             <span class="section__card-shadow"></span>
@@ -268,8 +277,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/gastronomy/pubs-card.jpg"
+                                src="/src/assets/images/gastronomy/pubs-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">Pubs</h3>
                             <span class="section__card-shadow"></span>
@@ -278,8 +288,9 @@
                         <article class="section__card">
                             <img
                                 class="section__card-img"
-                                src="/src/assets/images/gastronomy/food-card.jpg"
+                                src="/src/assets/images/gastronomy/food-card.jpg.webp"
                                 alt=""
+                                loading="lazy"
                             />
                             <h3 class="section__card-title">
                                 Productos tradicionales
@@ -295,8 +306,9 @@
                     <div class="section__data">
                         <img
                             class="section__background section__background--opacity-008"
-                            src="/src/assets/images/events/events-background.jpg"
+                            src="/src/assets/images/events/events-background.jpg.webp"
                             alt="Imagen de la sección home"
+                            loading="lazy"
                         />
                         <span class="section__shadow"></span>
 
@@ -338,6 +350,6 @@
         <!--======= #FOOTER =======-->
         <include src="./views/footer.html"></include>
 
-        <script type="module" src="/src/assets/scripts/main.js"></script>
+        <script defer type="module" src="/src/assets/scripts/main.js"></script>
     </body>
 </html>
