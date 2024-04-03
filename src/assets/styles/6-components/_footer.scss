@@ -1,6 +1,67 @@
+/*======= #BLOCK =======*/
 .footer {
   background-color: #1e254a;
   color: white;
-  padding: 20px;
+  padding-block: 2rem;
   text-align: center;
+}
+
+.footer__content {
+  row-gap: 2rem;
+}
+
+.footer__logo {
+  color: white;
+  font-size: $h1-font-size;
+  font-weight: $font-bold;
+}
+
+.footer__description {
+  margin-top: 5px;
+  font-size: $normal-font-size;
+}
+
+.footer__title {
+  margin-bottom: 5px;
+  font-size: $h3-font-size;
+}
+
+.footer__data {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
+.footer__links {
+  > li {
+    margin-bottom: 5px;
+  }
+}
+
+/*======= #ELEMENTS =======*/
+.footer__link {
+  color: white;
+  font-size: $small-font-size;
+  //font-weight: $font-small-bold;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $menu-color;
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 1.5rem;
+}
+
+.footer__social-link {
+  font-size: $h1-font-size;
+  transition: color 0.3s, transform 0.4s;
+
+  &:hover {
+    color: $menu-color;
+    transform: translateY(-0.25rem);
+  }
 }

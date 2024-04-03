@@ -104,11 +104,11 @@
                             >
                         </li>
 
-                        <li class="header-nav__item">
+                        <!--<li class="header-nav__item">
                             <a class="header-nav__link" href="#guide-section"
                                 >Guia turística</a
                             >
-                        </li>
+                        </li>-->
                     </ul>
 
                     <div id="close-btn" class="header-nav__close">
@@ -127,7 +127,7 @@
         <main>
             <section class="section" id="home-section">
                 <img
-                    class="section__background section__background--opacity-home"
+                    class="section__background section__background--opacity-008"
                     src="/src/assets/images/home/edimburgo-home-background.jpg"
                     alt="Imagen de la sección home"
                 />
@@ -151,7 +151,7 @@
                         </p>
                     </div>
 
-                    <div class="section__cards o-grid">
+                    <div class="section__cards o-grid section__cards--grid">
                         <article class="section__card">
                             <img
                                 class="section__card-img"
@@ -204,16 +204,20 @@
             </section>
 
             <section class="section" id="history-section">
-                <div class="section__container o-container o-grid">
-                    <div class="section__data">
+                <div
+                    class="section__container o-container o-grid section__container--grid"
+                >
+                    <div class="section__data section__data--left">
                         <img
-                            class="section__background section__background--opacity-history"
+                            class="section__background section__background--opacity-006"
                             src="/src/assets/images/history/history-background.jpg"
                             alt="Imagen de la sección home"
                         />
                         <span class="section__shadow"></span>
 
-                        <h2 class="section__title">Historia</h2>
+                        <h2 class="section__title section__title--left">
+                            Historia
+                        </h2>
                         <p class="section__description">
                             Edimburgo, la capital de Escocia, es una ciudad que
                             combina una rica historia con una vibrante cultura
@@ -222,6 +226,32 @@
                             hasta el presente.
                         </p>
                     </div>
+
+                    <div class="section__video">
+                        <!--<lite-youtube
+                            loading="lazy"
+                            videoid="2tryrRsmZfE"
+                            playlabel="Play: El corazón de la piedra, Osuna, Sevilla"
+                        ></lite-youtube>
+                        <figcaption class="aligned">
+                            Información turística sobre Osuna
+                        </figcaption>-->
+                        <figure>
+                            <iframe
+                                class="section__video-iframe"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/2tryrRsmZfE"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                            <figcaption class="aligned">
+                                Información turística sobre Osuna
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </section>
 
@@ -229,7 +259,7 @@
                 <div class="section__container o-container o-grid">
                     <div class="section__data">
                         <img
-                            class="section__background section__background--opacity-patrimony"
+                            class="section__background section__background--opacity-004"
                             src="/src/assets/images/patrimony/patrimony-background.jpg"
                             alt="Imagen de la sección home"
                         />
@@ -248,13 +278,53 @@
                             artistas y visitantes de todo el mundo.
                         </p>
                     </div>
+
+                    <div
+                        class="section__cards o-grid section__cards--grid-dos home"
+                    >
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/castle-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Patrimonio urbano
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/arthurs-seat-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Patrimonio natural
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+
+                        <article class="section__card">
+                            <img
+                                class="section__card-img"
+                                src="/src/assets/images/home/st-andrews-day-home-card.jpg"
+                                alt=""
+                            />
+                            <h3 class="section__card-title">
+                                Patrimonio inmaterial
+                            </h3>
+                            <span class="section__card-shadow"></span>
+                        </article>
+                    </div>
                 </div>
             </section>
             <section class="section" id="gastronomy-section">
                 <div class="section__container o-container o-grid">
                     <div class="section__data">
                         <img
-                            class="section__background section__background--opacity-patrimony"
+                            class="section__background section__background--opacity-004"
                             src="/src/assets/images/gastronomy/gastronomy-background.jpg"
                             alt="Imagen de la sección home"
                         />
@@ -281,7 +351,7 @@
                 <div class="section__container o-container o-grid">
                     <div class="section__data">
                         <img
-                            class="section__background section__background--opacity-home"
+                            class="section__background section__background--opacity-008"
                             src="/src/assets/images/events/events-background.jpg"
                             alt="Imagen de la sección home"
                         />
@@ -303,7 +373,7 @@
                 </div>
             </section>
 
-            <section class="section" id="guide-section">
+            <!--<section class="section" id="guide-section">
                 <div class="section__container o-container o-grid">
                     <div class="section__data">
                         <h2 class="section__title">Guía turística</h2>
@@ -319,13 +389,82 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </section>-->
         </main>
 
         <!--======= #FOOTER =======-->
         <footer class="footer">
-            <p>&copy; 2024 - jmazuelos</p>
-            <p>UOC</p>
+            <div class="footer__container o-container o-grid">
+                <div class="footer__content o-grid">
+                    <div class="footer__brand">
+                        <a class="footer__logo" href="">EdimburGo!</a>
+                        <p class="footer__description">
+                            Visítenos y explore Edimburgo sin límites.
+                        </p>
+                    </div>
+
+                    <div class="footer__data o-grid">
+                        <div class="footer__data-colum">
+                            <h3 class="footer__title">Quiénes somos</h3>
+
+                            <ul class="footer__links">
+                                <li>
+                                    <a class="footer__link" href=""
+                                        >Quiénes somos</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="footer__link" href=""
+                                        >Aviso legal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="footer__link" href=""
+                                        >Privacidad</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__data-colum">
+                            <h3 class="footer__title">Contactar</h3>
+
+                            <ul class="footer__links">
+                                <li>
+                                    <a class="footer__link" href=""
+                                        >Centro de soporte</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="footer__link" href="">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__group o-grid">
+                    <div class="footer__social o-grid">
+                        <a class="footer__social-link" href="" target="_blank"
+                            ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                        <a class="footer__social-link" href="" target="_blank"
+                            ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                        <a class="footer__social-link" href="" target="_blank"
+                            ><i class="fa-brands fa-x-twitter"></i
+                        ></a>
+                        <a class="footer__social-link" href="" target="_blank"
+                            ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                    </div>
+
+                    <span class="footer__copy">
+                        <p>&copy; UOC</p>
+                        <p>Diseñado por jmazuelos</p>
+                    </span>
+                </div>
+            </div>
         </footer>
 
         <script type="module" src="/src/assets/scripts/main.js"></script>
