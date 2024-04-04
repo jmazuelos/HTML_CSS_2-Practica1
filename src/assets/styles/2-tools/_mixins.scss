@@ -2,11 +2,22 @@
 * Mixin tools
 */
 
+//Se comenta por pruebas de rendimiento, muestra ejemplos de mixins
+/*
 @mixin border-radius($size) {
   -webkit-border-radius: $size;
   -moz-border-radius: $size;
   border-radius: $size;
 }
+
+@mixin animation($args) {
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -ms-animation: $args;
+  -o-animation: $args;
+  animation: $args;
+}
+*/
 
 @mixin transition($args) {
   -webkit-transition: $args;
@@ -22,14 +33,6 @@
   -ms-transform: $args;
   -o-transform: $args;
   transform: $args;
-}
-
-@mixin animation($args) {
-  -webkit-animation: $args;
-  -moz-animation: $args;
-  -ms-animation: $args;
-  -o-animation: $args;
-  animation: $args;
 }
 
 /**
