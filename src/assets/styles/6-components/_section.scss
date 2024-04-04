@@ -64,11 +64,11 @@
   box-shadow: $shadow-section-card;
 
   .section__card-img {
-    transition: transform 0.4s;
+    @include transition(transform 0.4s);
   }
 
   &:hover .section__card-img {
-    transform: scale(1.2);
+    @include transform(scale(1.2));
   }
 }
 

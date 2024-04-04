@@ -1,3 +1,45 @@
 /**
 * Mixin tools
 */
+
+@mixin border-radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin animation($args) {
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -ms-animation: $args;
+  -o-animation: $args;
+  animation: $args;
+}
+
+/**
+* Se incluye una transicion reutilizable para los hover de distintos links
+* que se comportan practicamente igual
+*/
+@mixin hover-link-transition($color, $time: 0.3s) {
+  @include transition(color $time);
+
+  &:hover {
+    color: $color;
+  }
+}

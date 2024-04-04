@@ -1,3 +1,11 @@
 /**
 * Function tools
 */
+
+@function pxToRem($px) {
+  @return #{$px / $font-base-size}rem;
+}
+
+@function remToPx($rem) {
+  @return #{$rem * $font-base-size}px;
+}
